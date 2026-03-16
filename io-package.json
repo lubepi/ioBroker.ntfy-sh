@@ -1,20 +1,11 @@
 {
   "common": {
     "name": "ntfy",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "news": {
-      "0.0.1": {
-        "en": "initial release",
-        "de": "Erstveröffentlichung",
-        "ru": "начальный выпуск",
-        "pt": "lançamento inicial",
-        "nl": "eerste uitgave",
-        "fr": "première version",
-        "it": "versione iniziale",
-        "es": "versión inicial",
-        "pl": "pierwsze wydanie",
-        "uk": "початковий випуск",
-        "zh-cn": "首次发行"
+      "0.1.0": {
+        "en": "Initial implementation with full ntfy.sh support",
+        "de": "Erstveröffentlichung mit vollem ntfy.sh Support"
       }
     },
     "titleLang": {
@@ -51,9 +42,7 @@
       "notifications",
       "push"
     ],
-    "license": "MIT",
     "platform": "Javascript/Node.js",
-    "main": "main.js",
     "icon": "ntfy.png",
     "enabled": true,
     "extIcon": "https://raw.githubusercontent.com/lubepi/ioBroker.ntfy/main/admin/ntfy.png",
@@ -67,7 +56,6 @@
     },
     "messagebox": true,
     "blockly": true,
-    "subscribe": null,
     "tier": 3,
     "connectionType": "cloud",
     "dataSource": "push",
@@ -75,14 +63,6 @@
       "type": "free",
       "license": "MIT"
     },
-    "protectedNative": [
-      "pass",
-      "token"
-    ],
-    "encryptedNative": [
-      "pass",
-      "token"
-    ],
     "dependencies": [
       {
         "js-controller": ">=6.0.11"
@@ -90,10 +70,18 @@
     ],
     "globalDependencies": [
       {
-        "admin": ">=7.6.17"
+        "admin": ">=7.6.20"
       }
     ]
   },
+  "protectedNative": [
+    "pass",
+    "token"
+  ],
+  "encryptedNative": [
+    "pass",
+    "token"
+  ],
   "native": {
     "url": "https://ntfy.sh",
     "authType": "none",

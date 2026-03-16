@@ -1,6 +1,6 @@
 {
   "name": "iobroker.ntfy",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "ntfy.sh adapter for ioBroker",
   "author": {
     "name": "lubepi",
@@ -32,14 +32,12 @@
     "main.js"
   ],
   "dependencies": {
-    "@iobroker/adapter-core": "^3.2.3",
+    "@iobroker/adapter-core": "^3.3.2",
     "axios": "^1.7.9"
   },
   "devDependencies": {
     "@iobroker/testing": "^5.2.2",
-    "chai": "^4.3.10",
-    "eslint": "^8.57.1",
-    "mocha": "^10.2.0"
+    "eslint": "^8.57.1"
   },
   "main": "main.js",
   "scripts": {

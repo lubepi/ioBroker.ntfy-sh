@@ -36,8 +36,8 @@ Ntfy supports a few variations:
 * **Access Token**: Create tokens and use Bearer token validation for your topic.
 
 ## Changelog
-### 0.0.1 (2026-03-16)
-* (lubepi) initial release
+### 0.1.0 (2026-03-16)
+* (lubepi) initial release with full ntfy.sh support
 
 ## License
 Copyright (c) 2026 lubepi <https://github.com/lubepi>
