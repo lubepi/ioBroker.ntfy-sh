@@ -1,0 +1,57 @@
+{
+  "name": "iobroker.ntfy",
+  "version": "0.0.1",
+  "description": "ntfy.sh adapter for ioBroker",
+  "author": {
+    "name": "lubepi",
+    "email": ""
+  },
+  "homepage": "https://github.com/lubepi/ioBroker.ntfy",
+  "license": "MIT",
+  "keywords": [
+    "ioBroker",
+    "Smart Home",
+    "home automation",
+    "ntfy",
+    "notifications",
+    "push"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lubepi/ioBroker.ntfy.git"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "admin{,/!(src)/**}/*",
+    "lib/",
+    "www/",
+    "io-package.json",
+    "LICENSE",
+    "main.js"
+  ],
+  "dependencies": {
+    "@iobroker/adapter-core": "^3.1.6",
+    "axios": "^1.6.8"
+  },
+  "devDependencies": {
+    "@iobroker/testing": "^4.1.0",
+    "chai": "^4.3.10",
+    "eslint": "^8.57.1",
+    "mocha": "^10.2.0"
+  },
+  "main": "main.js",
+  "scripts": {
+    "test:package": "mocha test/package --exit",
+    "test:unit": "mocha test/unit --exit",
+    "test:integration": "mocha test/integration --exit",
+    "test": "npm run test:package",
+    "lint": "eslint .",
+    "release": "release-script"
+  },
+  "bugs": {
+    "url": "https://github.com/lubepi/ioBroker.ntfy/issues"
+  },
+  "readmeFilename": "README.md"
+}

@@ -1,0 +1,11 @@
+.m .col .select-wrapper+label {
+    top: -26px;
+}
+.m span {
+    font-size: 0.9em;
+}
+.logo {
+    width: 64px;
+    height: 64px;
+    margin-top: 10px;
+}

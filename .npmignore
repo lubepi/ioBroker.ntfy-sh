@@ -1,0 +1,10 @@
+.github
+test
+src
+.gitignore
+.travis.yml
+appveyor.yml
+.agents
+.agent
+/tmp
+package-lock.json

@@ -1,0 +1,88 @@
+{
+  "common": {
+    "name": "ntfy",
+    "version": "0.0.1",
+    "news": {
+      "0.0.1": {
+        "en": "initial release",
+        "de": "Erstveröffentlichung",
+        "ru": "начальный выпуск",
+        "pt": "lançamento inicial",
+        "nl": "eerste uitgave",
+        "fr": "première version",
+        "it": "versione iniziale",
+        "es": "versión inicial",
+        "pl": "pierwsze wydanie",
+        "uk": "початковий випуск",
+        "zh-cn": "首次发行"
+      }
+    },
+    "title": "ntfy",
+    "titleLang": {
+      "en": "ntfy",
+      "de": "ntfy",
+      "ru": "ntfy",
+      "pt": "ntfy",
+      "nl": "ntfy",
+      "fr": "ntfy",
+      "it": "ntfy",
+      "es": "ntfy",
+      "pl": "ntfy",
+      "uk": "ntfy",
+      "zh-cn": "ntfy"
+    },
+    "desc": {
+      "en": "ntfy.sh adapter for ioBroker",
+      "de": "ntfy.sh Adapter für ioBroker",
+      "ru": "Адаптер ntfy.sh для ioBroker",
+      "pt": "Adaptador ntfy.sh para ioBroker",
+      "nl": "ntfy.sh adapter voor ioBroker",
+      "fr": "Adaptateur ntfy.sh pour ioBroker",
+      "it": "Adattatore ntfy.sh per ioBroker",
+      "es": "Adaptador ntfy.sh para ioBroker",
+      "pl": "Adapter ntfy.sh dla ioBroker",
+      "uk": "Адаптер ntfy.sh для ioBroker",
+      "zh-cn": "ioBroker 的 ntfy.sh 适配器"
+    },
+    "authors": [
+      "lubepi"
+    ],
+    "keywords": [
+      "ntfy",
+      "notifications",
+      "push"
+    ],
+    "license": "MIT",
+    "platform": "Javascript/Node.js",
+    "main": "main.js",
+    "icon": "ntfy.png",
+    "enabled": true,
+    "extIcon": "https://raw.githubusercontent.com/lubepi/ioBroker.ntfy/main/admin/ntfy.png",
+    "readme": "https://github.com/lubepi/ioBroker.ntfy/blob/main/README.md",
+    "loglevel": "info",
+    "mode": "daemon",
+    "type": "messaging",
+    "compact": true,
+    "materialize": true,
+    "messagebox": true,
+    "blockly": true,
+    "subscribe": null,
+    "tier": 3,
+    "connectionType": "cloud",
+    "dataSource": "push",
+    "dependencies": [
+      {
+        "js-controller": ">=5.0.0"
+      }
+    ]
+  },
+  "native": {
+    "url": "https://ntfy.sh",
+    "authType": "none",
+    "user": "",
+    "pass": "",
+    "token": ""
+  },
+  "objects": [],
+  "instanceObjects": []
+}

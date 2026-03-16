@@ -1,0 +1,16 @@
+node_modules
+.DS_Store
+Thumbs.db
+.idea
+.vscode
+*.swp
+*.bak
+package-lock.json
+.npmrc
+.python-version
+.agents
+.agent
+/tmp
+/test
+/admin/blockly.js
+# we keep admin/blockly.js in git but might exclude from npm if not needed? No, ioBroker needs it.
