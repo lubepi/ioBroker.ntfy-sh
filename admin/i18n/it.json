@@ -1,0 +1,10 @@
+{
+    "ntfy Server URL": "ntfy Server URL",
+    "Authentication Type": "Authentication Type",
+    "Username": "Username",
+    "Password": "Password",
+    "Access Token": "Access Token",
+    "None": "None",
+    "Username / Password": "Username / Password",
+    "Access Token Auth": "Access Token"
+}

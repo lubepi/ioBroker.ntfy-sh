@@ -5,15 +5,21 @@
     "url": {
       "type": "text",
       "label": "ntfy Server URL",
+      "xs": 12,
       "sm": 12,
       "md": 8,
+      "lg": 8,
+      "xl": 8,
       "help": "Default: https://ntfy.sh"
     },
     "authType": {
       "type": "select",
       "label": "Authentication Type",
+      "xs": 12,
       "sm": 12,
       "md": 4,
+      "lg": 4,
+      "xl": 4,
       "options": [
         { "label": "None", "value": "none" },
         { "label": "Username / Password", "value": "user" },
@@ -24,22 +30,31 @@
     "user": {
       "type": "text",
       "label": "Username",
+      "xs": 12,
       "sm": 12,
       "md": 6,
+      "lg": 6,
+      "xl": 6,
       "showIf": "authType === 'user'"
     },
     "pass": {
       "type": "password",
       "label": "Password",
+      "xs": 12,
       "sm": 12,
       "md": 6,
+      "lg": 6,
+      "xl": 6,
       "showIf": "authType === 'user'"
     },
     "token": {
       "type": "password",
       "label": "Access Token",
+      "xs": 12,
       "sm": 12,
       "md": 12,
+      "lg": 12,
+      "xl": 12,
       "showIf": "authType === 'token'"
     }
   }
