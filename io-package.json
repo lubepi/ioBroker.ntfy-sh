@@ -5,7 +5,16 @@
     "news": {
       "0.1.0": {
         "en": "Initial implementation with full ntfy.sh support",
-        "de": "Erstveröffentlichung mit vollem ntfy.sh Support"
+        "de": "Erstveröffentlichung mit vollem ntfy.sh Support",
+        "ru": "Первоначальная реализация с полной поддержкой ntfy.sh",
+        "pt": "Implementação inicial com suporte total ao ntfy.sh",
+        "nl": "Eerste implementatie met volledige ntfy.sh ondersteuning",
+        "fr": "Mise en œuvre initiale avec le support complet de ntfy.sh",
+        "it": "Implementazione iniziale con supporto completo per ntfy.sh",
+        "es": "Implementación inicial con soporte completo para ntfy.sh",
+        "pl": "Początkowa implementacja z pełną obsługą ntfy.sh",
+        "uk": "Початкова реалізація з повною підтримкою ntfy.sh",
+        "zh-cn": "最初实现，提供完整的 ntfy.sh 支持"
       }
     },
     "titleLang": {
