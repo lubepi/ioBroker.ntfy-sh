@@ -1,12 +1,12 @@
 {
-  "name": "iobroker.ntfy",
+  "name": "iobroker.ntfy-sh",
   "version": "0.1.0",
   "description": "ntfy.sh adapter for ioBroker",
   "author": {
     "name": "lubepi",
     "email": ""
   },
-  "homepage": "https://github.com/lubepi/ioBroker.ntfy",
+  "homepage": "https://github.com/lubepi/ioBroker.ntfy-sh",
   "license": "MIT",
   "keywords": [
     "ioBroker",
@@ -18,7 +18,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/lubepi/ioBroker.ntfy.git"
+    "url": "https://github.com/lubepi/ioBroker.ntfy-sh.git"
   },
   "engines": {
     "node": ">=20"
@@ -49,7 +49,7 @@
     "release": "release-script"
   },
   "bugs": {
-    "url": "https://github.com/lubepi/ioBroker.ntfy/issues"
+    "url": "https://github.com/lubepi/ioBroker.ntfy-sh/issues"
   },
   "readmeFilename": "README.md"
 }

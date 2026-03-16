@@ -1,6 +1,6 @@
 {
   "common": {
-    "name": "ntfy",
+    "name": "ntfy-sh",
     "version": "0.1.0",
     "news": {
       "0.1.0": {
@@ -45,8 +45,8 @@
     "platform": "Javascript/Node.js",
     "icon": "ntfy.png",
     "enabled": true,
-    "extIcon": "https://raw.githubusercontent.com/lubepi/ioBroker.ntfy/main/admin/ntfy.png",
-    "readme": "https://github.com/lubepi/ioBroker.ntfy/blob/main/README.md",
+    "extIcon": "https://raw.githubusercontent.com/lubepi/ioBroker.ntfy-sh/main/admin/ntfy.png",
+    "readme": "https://github.com/lubepi/ioBroker.ntfy-sh/blob/main/README.md",
     "loglevel": "info",
     "mode": "daemon",
     "type": "messaging",

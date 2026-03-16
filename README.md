@@ -1,5 +1,5 @@
 ![Logo](admin/ntfy.png)
-# ioBroker.ntfy
+# ioBroker.ntfy-sh
 
 ## ntfy.sh adapter for ioBroker
 
@@ -21,7 +21,7 @@ Under the **Sendto** category, use the `ntfy` block to dispatch a message:
 
 ### JavaScript Example
 ```javascript
-sendTo('ntfy.0', 'send', {
+sendTo('ntfy-sh.0', 'send', {
     message: 'Motion detected in the backyard!',
     title: 'Security Alert',
     topic: 'home_alerts_xyz',

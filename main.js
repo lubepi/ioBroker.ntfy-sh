@@ -10,7 +10,7 @@ class Ntfy extends utils.Adapter {
     constructor(options) {
         super({
             ...options,
-            name: "ntfy",
+            name: "ntfy-sh",
         });
         this.on("ready", this.onReady.bind(this));
         this.on("message", this.onMessage.bind(this));
