@@ -61,7 +61,7 @@
     "type": "messaging",
     "compact": true,
     "adminUI": {
-      "config": "html"
+      "config": "json"
     },
     "messagebox": true,
     "blockly": true,

@@ -1,0 +1,46 @@
+{
+  "i18n": true,
+  "type": "panel",
+  "items": {
+    "url": {
+      "type": "text",
+      "label": "ntfy Server URL",
+      "sm": 12,
+      "md": 8,
+      "help": "Default: https://ntfy.sh"
+    },
+    "authType": {
+      "type": "select",
+      "label": "Authentication Type",
+      "sm": 12,
+      "md": 4,
+      "options": [
+        { "label": "None", "value": "none" },
+        { "label": "Username / Password", "value": "user" },
+        { "label": "Access Token", "value": "token" }
+      ],
+      "default": "none"
+    },
+    "user": {
+      "type": "text",
+      "label": "Username",
+      "sm": 12,
+      "md": 6,
+      "showIf": "authType === 'user'"
+    },
+    "pass": {
+      "type": "password",
+      "label": "Password",
+      "sm": 12,
+      "md": 6,
+      "showIf": "authType === 'user'"
+    },
+    "token": {
+      "type": "password",
+      "label": "Access Token",
+      "sm": 12,
+      "md": 12,
+      "showIf": "authType === 'token'"
+    }
+  }
+}
