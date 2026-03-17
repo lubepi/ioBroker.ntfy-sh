@@ -36,6 +36,14 @@ Ntfy supports a few variations:
 * **Access Token**: Create tokens and use Bearer token validation for your topic.
 
 ## Changelog
+### 0.1.1 (2026-03-17)
+* (lubepi) Migrate admin UI to jsonConfig (Admin 5+)
+* (lubepi) Add VS Code settings with ioBroker JSON schemas
+* (lubepi) Setup GitHub Actions for automated releases via NPM Trusted Publishing
+* (lubepi) Update adapter icon and add legal disclaimers
+* (lubepi) Add i18n translations for admin settings
+* (lubepi) Remove legacy admin UI files
+
 ### 0.1.0 (2026-03-16)
 * (lubepi) initial release with full ntfy.sh support
 
