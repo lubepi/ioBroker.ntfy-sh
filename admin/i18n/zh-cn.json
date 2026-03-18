@@ -1,10 +1,19 @@
 {
-    "ntfy Server URL": "ntfy Server URL",
-    "Authentication Type": "Authentication Type",
-    "Username": "Username",
-    "Password": "Password",
-    "Access Token": "Access Token",
-    "None": "None",
-    "Username / Password": "Username / Password",
-    "Access Token Auth": "Access Token"
+    "ntfy Server URL": "ntfy 服务器 URL",
+    "Authentication Type": "认证类型",
+    "Username": "用户名",
+    "Password": "密码",
+    "Access Token": "访问令牌",
+    "None": "无",
+    "Username / Password": "用户名 / 密码",
+    "Access Token Auth": "访问令牌",
+    "Default: https://ntfy.sh": "默认: https://ntfy.sh",
+    "Default Topic": "默认主题",
+    "Default topic for notifications (used when no topic is specified in the message)": "通知的默认主题（当消息中未指定主题时使用）",
+    "Connection": "连接",
+    "Topics": "主题",
+    "Subscribed Topics": "已订阅主题",
+    "Topic Name": "主题名称",
+    "Display Name": "显示名称",
+    "Configure topics to subscribe to. The adapter will receive messages from these topics in real-time via SSE (Server-Sent Events).": "配置要订阅的主题。适配器将通过 SSE（服务器发送事件）实时接收这些主题的消息。"
 }

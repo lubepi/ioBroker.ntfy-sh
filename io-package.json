@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "ntfy-sh",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "news": {
+      "0.2.0": {
+        "en": "Major update: Subscribe to topics (SSE), account statistics, server version check, email/call/icon/filename/attach_file/sequence_id parameters, dismiss/delete notifications, connection status",
+        "de": "Großes Update: Topics abonnieren (SSE), Kontostatistiken, Server-Versionsprüfung, email/call/icon/filename/attach_file/sequence_id Parameter, Benachrichtigungen verwerfen/löschen, Verbindungsstatus",
+        "ru": "Крупное обновление: подписка на темы (SSE), статистика аккаунта, проверка версии сервера, параметры email/call/icon/filename/attach_file/sequence_id, отклонение/удаление уведомлений, статус подключения",
+        "pt": "Atualização importante: Subscrever tópicos (SSE), estatísticas da conta, verificação de versão do servidor, parâmetros email/call/icon/filename/attach_file/sequence_id, dispensar/eliminar notificações, estado da ligação",
+        "nl": "Grote update: Abonneren op topics (SSE), accountstatistieken, serverversiecontrole, email/call/icon/filename/attach_file/sequence_id parameters, meldingen verwijderen/wissen, verbindingsstatus",
+        "fr": "Mise à jour majeure: Abonnement aux sujets (SSE), statistiques du compte, vérification de la version du serveur, paramètres email/call/icon/filename/attach_file/sequence_id, rejeter/supprimer les notifications, état de la connexion",
+        "it": "Aggiornamento importante: Iscrizione ai topic (SSE), statistiche account, controllo versione server, parametri email/call/icon/filename/attach_file/sequence_id, eliminare/cancellare notifiche, stato connessione",
+        "es": "Actualización importante: Suscripción a temas (SSE), estadísticas de cuenta, verificación de versión del servidor, parámetros email/call/icon/filename/attach_file/sequence_id, descartar/eliminar notificaciones, estado de conexión",
+        "pl": "Duża aktualizacja: Subskrypcja tematów (SSE), statystyki konta, sprawdzanie wersji serwera, parametry email/call/icon/filename/attach_file/sequence_id, odrzucanie/usuwanie powiadomień, status połączenia",
+        "uk": "Велике оновлення: Підписка на теми (SSE), статистика облікового запису, перевірка версії сервера, параметри email/call/icon/filename/attach_file/sequence_id, відхилення/видалення сповіщень, стан з'єднання",
+        "zh-cn": "重大更新：订阅主题（SSE）、账户统计、服务器版本检查、email/call/icon/filename/attach_file/sequence_id 参数、关闭/删除通知、连接状态"
+      },
       "0.1.0": {
         "en": "Initial implementation with full ntfy.sh support",
         "de": "Erstveröffentlichung mit vollem ntfy.sh Support",
@@ -33,15 +46,15 @@
     "desc": {
       "en": "Unofficial ntfy.sh adapter for ioBroker",
       "de": "Inoffizieller ntfy.sh Adapter für ioBroker",
-      "ru": "Адаптер ntfy.sh для ioBroker",
-      "pt": "Adaptador ntfy.sh para ioBroker",
-      "nl": "ntfy.sh adapter voor ioBroker",
-      "fr": "Adaptateur ntfy.sh pour ioBroker",
-      "it": "Adattatore ntfy.sh per ioBroker",
-      "es": "Adaptador ntfy.sh para ioBroker",
-      "pl": "Adapter ntfy.sh für ioBroker",
-      "uk": "Адаптер ntfy.sh für ioBroker",
-      "zh-cn": "ioBroker 的 ntfy.sh 适配器"
+      "ru": "Неофициальный адаптер ntfy.sh для ioBroker",
+      "pt": "Adaptador ntfy.sh não oficial para ioBroker",
+      "nl": "Onofficiële ntfy.sh adapter voor ioBroker",
+      "fr": "Adaptateur ntfy.sh non officiel pour ioBroker",
+      "it": "Adattatore ntfy.sh non ufficiale per ioBroker",
+      "es": "Adaptador ntfy.sh no oficial para ioBroker",
+      "pl": "Nieoficjalny adapter ntfy.sh dla ioBroker",
+      "uk": "Неофіційний адаптер ntfy.sh для ioBroker",
+      "zh-cn": "ioBroker 的非官方 ntfy.sh 适配器"
     },
     "authors": [
       "lubepi"
@@ -96,8 +109,32 @@
     "authType": "none",
     "user": "",
     "pass": "",
-    "token": ""
+    "token": "",
+    "defaultTopic": "",
+    "topics": []
   },
   "objects": [],
-  "instanceObjects": []
+  "instanceObjects": [
+    {
+      "_id": "info",
+      "type": "channel",
+      "common": {
+        "name": "Information"
+      },
+      "native": {}
+    },
+    {
+      "_id": "info.connection",
+      "type": "state",
+      "common": {
+        "role": "indicator.connected",
+        "name": "Connection status",
+        "type": "boolean",
+        "read": true,
+        "write": false,
+        "def": false
+      },
+      "native": {}
+    }
+  ]
 }

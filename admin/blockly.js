@@ -5,26 +5,302 @@ if (typeof Blockly !== "undefined") {
   Blockly.Words["ntfy"] = {
     en: "ntfy-sh notification",
     de: "ntfy-sh Benachrichtigung",
+    ru: "ntfy-sh уведомление",
+    pt: "ntfy-sh notificação",
+    nl: "ntfy-sh melding",
+    fr: "ntfy-sh notification",
+    it: "ntfy-sh notifica",
+    es: "ntfy-sh notificación",
+    pl: "ntfy-sh powiadomienie",
+    uk: "ntfy-sh сповіщення",
+    "zh-cn": "ntfy-sh 通知",
   };
-  Blockly.Words["ntfy_message"] = { en: "message", de: "Nachricht" };
-  Blockly.Words["ntfy_topic"] = { en: "topic", de: "Thema" };
-  Blockly.Words["ntfy_title"] = { en: "title", de: "Titel" };
-  Blockly.Words["ntfy_priority"] = { en: "priority", de: "Priorität" };
-  Blockly.Words["ntfy_priority_default"] = { en: "default", de: "Standard" };
-  Blockly.Words["ntfy_priority_min"] = { en: "min", de: "sehr niedrig" };
-  Blockly.Words["ntfy_priority_low"] = { en: "low", de: "niedrig" };
-  Blockly.Words["ntfy_priority_high"] = { en: "high", de: "hoch" };
-  Blockly.Words["ntfy_priority_max"] = { en: "max", de: "sehr hoch" };
-
-  Blockly.Words["ntfy_tags"] = { en: "tags", de: "Tags" };
-  Blockly.Words["ntfy_click"] = { en: "click URL", de: "Klick-URL" };
-  Blockly.Words["ntfy_attach"] = { en: "attach URL", de: "Anhang-URL" };
+  Blockly.Words["ntfy_anyInstance"] = {
+    en: "all instances",
+    de: "alle Instanzen",
+    ru: "все экземпляры",
+    pt: "todas as instâncias",
+    nl: "alle instanties",
+    fr: "toutes les instances",
+    it: "tutte le istanze",
+    es: "todas las instancias",
+    pl: "wszystkie instancje",
+    uk: "всі екземпляри",
+    "zh-cn": "所有实例",
+  };
+  Blockly.Words["ntfy_message"] = {
+    en: "message",
+    de: "Nachricht",
+    ru: "сообщение",
+    pt: "mensagem",
+    nl: "bericht",
+    fr: "message",
+    it: "messaggio",
+    es: "mensaje",
+    pl: "wiadomość",
+    uk: "повідомлення",
+    "zh-cn": "消息",
+  };
+  Blockly.Words["ntfy_topic"] = {
+    en: "topic",
+    de: "Thema",
+    ru: "тема",
+    pt: "tópico",
+    nl: "onderwerp",
+    fr: "sujet",
+    it: "argomento",
+    es: "tema",
+    pl: "temat",
+    uk: "тема",
+    "zh-cn": "主题",
+  };
+  Blockly.Words["ntfy_title"] = {
+    en: "title",
+    de: "Titel",
+    ru: "заголовок",
+    pt: "título",
+    nl: "titel",
+    fr: "titre",
+    it: "titolo",
+    es: "título",
+    pl: "tytuł",
+    uk: "заголовок",
+    "zh-cn": "标题",
+  };
+  Blockly.Words["ntfy_priority"] = {
+    en: "priority",
+    de: "Priorität",
+    ru: "приоритет",
+    pt: "prioridade",
+    nl: "prioriteit",
+    fr: "priorité",
+    it: "priorità",
+    es: "prioridad",
+    pl: "priorytet",
+    uk: "пріоритет",
+    "zh-cn": "优先级",
+  };
+  Blockly.Words["ntfy_priority_default"] = {
+    en: "default",
+    de: "Standard",
+    ru: "по умолчанию",
+    pt: "padrão",
+    nl: "standaard",
+    fr: "par défaut",
+    it: "predefinito",
+    es: "predeterminado",
+    pl: "domyślny",
+    uk: "за замовчуванням",
+    "zh-cn": "默认",
+  };
+  Blockly.Words["ntfy_priority_min"] = {
+    en: "min",
+    de: "sehr niedrig",
+    ru: "минимальный",
+    pt: "mínimo",
+    nl: "minimaal",
+    fr: "minimum",
+    it: "minimo",
+    es: "mínimo",
+    pl: "minimalny",
+    uk: "мінімальний",
+    "zh-cn": "最低",
+  };
+  Blockly.Words["ntfy_priority_low"] = {
+    en: "low",
+    de: "niedrig",
+    ru: "низкий",
+    pt: "baixo",
+    nl: "laag",
+    fr: "bas",
+    it: "basso",
+    es: "bajo",
+    pl: "niski",
+    uk: "низький",
+    "zh-cn": "低",
+  };
+  Blockly.Words["ntfy_priority_high"] = {
+    en: "high",
+    de: "hoch",
+    ru: "высокий",
+    pt: "alto",
+    nl: "hoog",
+    fr: "haut",
+    it: "alto",
+    es: "alto",
+    pl: "wysoki",
+    uk: "високий",
+    "zh-cn": "高",
+  };
+  Blockly.Words["ntfy_priority_max"] = {
+    en: "max",
+    de: "sehr hoch",
+    ru: "максимальный",
+    pt: "máximo",
+    nl: "maximaal",
+    fr: "maximum",
+    it: "massimo",
+    es: "máximo",
+    pl: "maksymalny",
+    uk: "максимальний",
+    "zh-cn": "最高",
+  };
+  Blockly.Words["ntfy_tags"] = {
+    en: "tags",
+    de: "Tags",
+    ru: "теги",
+    pt: "tags",
+    nl: "tags",
+    fr: "tags",
+    it: "tag",
+    es: "etiquetas",
+    pl: "tagi",
+    uk: "теги",
+    "zh-cn": "标签",
+  };
+  Blockly.Words["ntfy_click"] = {
+    en: "click URL",
+    de: "Klick-URL",
+    ru: "URL клика",
+    pt: "URL de clique",
+    nl: "klik-URL",
+    fr: "URL de clic",
+    it: "URL clic",
+    es: "URL de clic",
+    pl: "URL kliknięcia",
+    uk: "URL кліку",
+    "zh-cn": "点击链接",
+  };
+  Blockly.Words["ntfy_attach"] = {
+    en: "attach URL",
+    de: "Anhang-URL",
+    ru: "URL вложения",
+    pt: "URL de anexo",
+    nl: "bijlage-URL",
+    fr: "URL de pièce jointe",
+    it: "URL allegato",
+    es: "URL de adjunto",
+    pl: "URL załącznika",
+    uk: "URL вкладення",
+    "zh-cn": "附件链接",
+  };
+  Blockly.Words["ntfy_attach_file"] = {
+    en: "attach file (local path)",
+    de: "Datei anhängen (lokaler Pfad)",
+    ru: "прикрепить файл (локальный путь)",
+    pt: "anexar ficheiro (caminho local)",
+    nl: "bestand bijvoegen (lokaal pad)",
+    fr: "joindre un fichier (chemin local)",
+    it: "allega file (percorso locale)",
+    es: "adjuntar archivo (ruta local)",
+    pl: "dołącz plik (ścieżka lokalna)",
+    uk: "прикріпити файл (локальний шлях)",
+    "zh-cn": "附加文件（本地路径）",
+  };
+  Blockly.Words["ntfy_filename"] = {
+    en: "filename",
+    de: "Dateiname",
+    ru: "имя файла",
+    pt: "nome do ficheiro",
+    nl: "bestandsnaam",
+    fr: "nom du fichier",
+    it: "nome file",
+    es: "nombre de archivo",
+    pl: "nazwa pliku",
+    uk: "ім'я файлу",
+    "zh-cn": "文件名",
+  };
   Blockly.Words["ntfy_actions"] = {
     en: "actions (JSON)",
     de: "Aktionen (JSON)",
+    ru: "действия (JSON)",
+    pt: "ações (JSON)",
+    nl: "acties (JSON)",
+    fr: "actions (JSON)",
+    it: "azioni (JSON)",
+    es: "acciones (JSON)",
+    pl: "akcje (JSON)",
+    uk: "дії (JSON)",
+    "zh-cn": "操作 (JSON)",
   };
-  Blockly.Words["ntfy_markdown"] = { en: "markdown", de: "Markdown" };
-  Blockly.Words["ntfy_delay"] = { en: "delay", de: "Verzögerung" };
+  Blockly.Words["ntfy_markdown"] = {
+    en: "markdown",
+    de: "Markdown",
+    ru: "markdown",
+    pt: "markdown",
+    nl: "markdown",
+    fr: "markdown",
+    it: "markdown",
+    es: "markdown",
+    pl: "markdown",
+    uk: "markdown",
+    "zh-cn": "markdown",
+  };
+  Blockly.Words["ntfy_delay"] = {
+    en: "delay",
+    de: "Verzögerung",
+    ru: "задержка",
+    pt: "atraso",
+    nl: "vertraging",
+    fr: "délai",
+    it: "ritardo",
+    es: "retraso",
+    pl: "opóźnienie",
+    uk: "затримка",
+    "zh-cn": "延迟",
+  };
+  Blockly.Words["ntfy_email"] = {
+    en: "email (forward to)",
+    de: "E-Mail (weiterleiten an)",
+    ru: "email (переслать на)",
+    pt: "email (encaminhar para)",
+    nl: "e-mail (doorsturen naar)",
+    fr: "email (transférer à)",
+    it: "email (inoltra a)",
+    es: "email (reenviar a)",
+    pl: "email (przekaż do)",
+    uk: "email (переслати на)",
+    "zh-cn": "电子邮件（转发至）",
+  };
+  Blockly.Words["ntfy_call"] = {
+    en: "call (phone number)",
+    de: "Anruf (Telefonnummer)",
+    ru: "звонок (номер телефона)",
+    pt: "chamada (número de telefone)",
+    nl: "bellen (telefoonnummer)",
+    fr: "appel (numéro de téléphone)",
+    it: "chiamata (numero di telefono)",
+    es: "llamada (número de teléfono)",
+    pl: "połączenie (numer telefonu)",
+    uk: "дзвінок (номер телефону)",
+    "zh-cn": "电话（电话号码）",
+  };
+  Blockly.Words["ntfy_icon"] = {
+    en: "icon URL",
+    de: "Icon-URL",
+    ru: "URL иконки",
+    pt: "URL do ícone",
+    nl: "pictogram-URL",
+    fr: "URL de l'icône",
+    it: "URL icona",
+    es: "URL del icono",
+    pl: "URL ikony",
+    uk: "URL іконки",
+    "zh-cn": "图标链接",
+  };
+  Blockly.Words["ntfy_sequence_id"] = {
+    en: "sequence ID",
+    de: "Sequenz-ID",
+    ru: "ID последовательности",
+    pt: "ID de sequência",
+    nl: "sequentie-ID",
+    fr: "ID de séquence",
+    it: "ID sequenza",
+    es: "ID de secuencia",
+    pl: "ID sekwencji",
+    uk: "ID послідовності",
+    "zh-cn": "序列ID",
+  };
 
   // Define the custom blockly block
   Blockly.Sendto.blocks["ntfy"] =
@@ -53,24 +329,12 @@ if (typeof Blockly !== "undefined") {
         .appendField(Blockly.Words["ntfy"][systemLang])
         .appendField(
           new Blockly.FieldDropdown(
-            [
-              [
-                Blockly.Words["ntfy_anyInstance"]
-                  ? Blockly.Words["ntfy_anyInstance"][systemLang]
-                  : "all instances",
-                "",
-              ],
-            ],
-            function (text) {
+            [[Blockly.Words["ntfy_anyInstance"][systemLang], ""]],
+            function () {
               if (typeof main !== "undefined" && main.instances) {
                 var instances = main.instances;
                 var result = [
-                  [
-                    Blockly.Words["ntfy_anyInstance"]
-                      ? Blockly.Words["ntfy_anyInstance"][systemLang]
-                      : "all instances",
-                    "",
-                  ],
+                  [Blockly.Words["ntfy_anyInstance"][systemLang], ""],
                 ];
                 for (var i = 0; i < instances.length; i++) {
                   if (instances[i].startsWith("system.adapter.ntfy-sh.")) {
@@ -80,25 +344,13 @@ if (typeof Blockly !== "undefined") {
                 }
                 return result.length > 1
                   ? result
-                  : [
-                      [
-                        Blockly.Words["ntfy_anyInstance"]
-                          ? Blockly.Words["ntfy_anyInstance"][systemLang]
-                          : "all instances",
-                        "",
-                      ],
-                    ];
+                  : [[Blockly.Words["ntfy_anyInstance"][systemLang], ""]];
               }
               var options = [
-                [
-                  Blockly.Words["ntfy_anyInstance"]
-                    ? Blockly.Words["ntfy_anyInstance"][systemLang]
-                    : "all instances",
-                  "",
-                ],
+                [Blockly.Words["ntfy_anyInstance"][systemLang], ""],
               ];
-              for (var i = 0; i < 10; i++) {
-                options.push([`ntfy-sh.${i}`, `ntfy-sh.${i}`]);
+              for (var j = 0; j < 10; j++) {
+                options.push([`ntfy-sh.${j}`, `ntfy-sh.${j}`]);
               }
               return options;
             },
@@ -143,6 +395,14 @@ if (typeof Blockly !== "undefined") {
         .setCheck("String")
         .appendField(Blockly.Words["ntfy_attach"][systemLang]);
 
+      this.appendValueInput("ATTACH_FILE")
+        .setCheck("String")
+        .appendField(Blockly.Words["ntfy_attach_file"][systemLang]);
+
+      this.appendValueInput("FILENAME")
+        .setCheck("String")
+        .appendField(Blockly.Words["ntfy_filename"][systemLang]);
+
       this.appendValueInput("ACTIONS")
         .setCheck(["String", "Array"])
         .appendField(Blockly.Words["ntfy_actions"][systemLang]);
@@ -150,6 +410,22 @@ if (typeof Blockly !== "undefined") {
       this.appendValueInput("DELAY")
         .setCheck("String")
         .appendField(Blockly.Words["ntfy_delay"][systemLang]);
+
+      this.appendValueInput("EMAIL")
+        .setCheck("String")
+        .appendField(Blockly.Words["ntfy_email"][systemLang]);
+
+      this.appendValueInput("CALL")
+        .setCheck("String")
+        .appendField(Blockly.Words["ntfy_call"][systemLang]);
+
+      this.appendValueInput("ICON")
+        .setCheck("String")
+        .appendField(Blockly.Words["ntfy_icon"][systemLang]);
+
+      this.appendValueInput("SEQUENCE_ID")
+        .setCheck("String")
+        .appendField(Blockly.Words["ntfy_sequence_id"][systemLang]);
 
       this.appendDummyInput("MARKDOWN_INPUT")
         .appendField(Blockly.Words["ntfy_markdown"][systemLang])
@@ -197,6 +473,16 @@ if (typeof Blockly !== "undefined") {
       "ATTACH",
       Blockly.JavaScript.ORDER_ATOMIC,
     );
+    var value_attach_file = Blockly.JavaScript.valueToCode(
+      block,
+      "ATTACH_FILE",
+      Blockly.JavaScript.ORDER_ATOMIC,
+    );
+    var value_filename = Blockly.JavaScript.valueToCode(
+      block,
+      "FILENAME",
+      Blockly.JavaScript.ORDER_ATOMIC,
+    );
     var value_actions = Blockly.JavaScript.valueToCode(
       block,
       "ACTIONS",
@@ -205,6 +491,26 @@ if (typeof Blockly !== "undefined") {
     var value_delay = Blockly.JavaScript.valueToCode(
       block,
       "DELAY",
+      Blockly.JavaScript.ORDER_ATOMIC,
+    );
+    var value_email = Blockly.JavaScript.valueToCode(
+      block,
+      "EMAIL",
+      Blockly.JavaScript.ORDER_ATOMIC,
+    );
+    var value_call = Blockly.JavaScript.valueToCode(
+      block,
+      "CALL",
+      Blockly.JavaScript.ORDER_ATOMIC,
+    );
+    var value_icon = Blockly.JavaScript.valueToCode(
+      block,
+      "ICON",
+      Blockly.JavaScript.ORDER_ATOMIC,
+    );
+    var value_sequence_id = Blockly.JavaScript.valueToCode(
+      block,
+      "SEQUENCE_ID",
       Blockly.JavaScript.ORDER_ATOMIC,
     );
     var checkbox_markdown = block.getFieldValue("MARKDOWN") === "TRUE";
@@ -230,19 +536,43 @@ if (typeof Blockly !== "undefined") {
     if (value_attach && value_attach !== "''" && value_attach !== '""') {
       objArr.push(`attach: ${value_attach}`);
     }
+    if (
+      value_attach_file &&
+      value_attach_file !== "''" &&
+      value_attach_file !== '""'
+    ) {
+      objArr.push(`attach_file: ${value_attach_file}`);
+    }
+    if (value_filename && value_filename !== "''" && value_filename !== '""') {
+      objArr.push(`filename: ${value_filename}`);
+    }
     if (value_actions && value_actions !== "''" && value_actions !== '""') {
       objArr.push(`actions: ${value_actions}`);
     }
     if (value_delay && value_delay !== "''" && value_delay !== '""') {
       objArr.push(`delay: ${value_delay}`);
     }
+    if (value_email && value_email !== "''" && value_email !== '""') {
+      objArr.push(`email: ${value_email}`);
+    }
+    if (value_call && value_call !== "''" && value_call !== '""') {
+      objArr.push(`call: ${value_call}`);
+    }
+    if (value_icon && value_icon !== "''" && value_icon !== '""') {
+      objArr.push(`icon: ${value_icon}`);
+    }
+    if (
+      value_sequence_id &&
+      value_sequence_id !== "''" &&
+      value_sequence_id !== '""'
+    ) {
+      objArr.push(`sequence_id: ${value_sequence_id}`);
+    }
     if (checkbox_markdown) {
       objArr.push("markdown: true");
     }
 
-    var code = `sendTo(${instance}, "send", {\n  ${objArr.join(
-      ",\n  ",
-    )}\n});\n`;
+    var code = `sendTo(${instance}, "send", {\n  ${objArr.join(",\n  ")}\n});\n`;
     return code;
   };
 }

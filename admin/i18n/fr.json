@@ -1,10 +1,19 @@
 {
-    "ntfy Server URL": "ntfy Server URL",
-    "Authentication Type": "Authentication Type",
-    "Username": "Username",
-    "Password": "Password",
-    "Access Token": "Access Token",
-    "None": "None",
-    "Username / Password": "Username / Password",
-    "Access Token Auth": "Access Token"
+    "ntfy Server URL": "URL du serveur ntfy",
+    "Authentication Type": "Type d'authentification",
+    "Username": "Nom d'utilisateur",
+    "Password": "Mot de passe",
+    "Access Token": "Jeton d'accès",
+    "None": "Aucun",
+    "Username / Password": "Nom d'utilisateur / Mot de passe",
+    "Access Token Auth": "Jeton d'accès",
+    "Default: https://ntfy.sh": "Par défaut: https://ntfy.sh",
+    "Default Topic": "Sujet par défaut",
+    "Default topic for notifications (used when no topic is specified in the message)": "Sujet par défaut pour les notifications (utilisé lorsqu'aucun sujet n'est spécifié dans le message)",
+    "Connection": "Connexion",
+    "Topics": "Sujets",
+    "Subscribed Topics": "Sujets abonnés",
+    "Topic Name": "Nom du sujet",
+    "Display Name": "Nom d'affichage",
+    "Configure topics to subscribe to. The adapter will receive messages from these topics in real-time via SSE (Server-Sent Events).": "Configurez les sujets auxquels vous abonner. L'adaptateur recevra les messages de ces sujets en temps réel via SSE (Server-Sent Events)."
 }
