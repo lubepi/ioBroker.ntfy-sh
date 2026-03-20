@@ -1,0 +1,19 @@
+{
+    "Access Token": "Токен доступу",
+    "Access Token Auth": "Токен доступу",
+    "Authentication Type": "Тип автентифікації",
+    "Configure topics to subscribe to. The adapter will receive messages from these topics in real-time via SSE (Server-Sent Events).": "Налаштуйте теми для підписки. Адаптер отримуватиме повідомлення з цих тем у реальному часі через SSE (Server-Sent Events).",
+    "Connection": "З'єднання",
+    "Default Topic": "Тема за замовчуванням",
+    "Default topic for notifications (used when no topic is specified in the message)": "Тема за замовчуванням для сповіщень (використовується, коли тема не вказана в повідомленні)",
+    "Default: https://ntfy.sh": "За замовчуванням: https://ntfy.sh",
+    "Display Name": "Відображуване ім'я",
+    "None": "Немає",
+    "Password": "Пароль",
+    "Subscribed Topics": "Підписані теми",
+    "Topic Name": "Назва теми",
+    "Topics": "Теми",
+    "Username": "Ім'я користувача",
+    "Username / Password": "Ім'я користувача / Пароль",
+    "ntfy Server URL": "URL сервера ntfy"
+}

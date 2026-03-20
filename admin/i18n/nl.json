@@ -1,0 +1,19 @@
+{
+    "Access Token": "Toegangstoken",
+    "Access Token Auth": "Toegangstoken",
+    "Authentication Type": "Authenticatietype",
+    "Configure topics to subscribe to. The adapter will receive messages from these topics in real-time via SSE (Server-Sent Events).": "Configureer onderwerpen om op te abonneren. De adapter ontvangt berichten van deze onderwerpen in realtime via SSE (Server-Sent Events).",
+    "Connection": "Verbinding",
+    "Default Topic": "Standaard onderwerp",
+    "Default topic for notifications (used when no topic is specified in the message)": "Standaard onderwerp voor meldingen (wordt gebruikt wanneer er geen onderwerp is opgegeven in het bericht)",
+    "Default: https://ntfy.sh": "Standaard: https://ntfy.sh",
+    "Display Name": "Weergavenaam",
+    "None": "Geen",
+    "Password": "Wachtwoord",
+    "Subscribed Topics": "Geabonneerde onderwerpen",
+    "Topic Name": "Onderwerpnaam",
+    "Topics": "Onderwerpen",
+    "Username": "Gebruikersnaam",
+    "Username / Password": "Gebruikersnaam / Wachtwoord",
+    "ntfy Server URL": "ntfy Server URL"
+}

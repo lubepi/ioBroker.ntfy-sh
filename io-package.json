@@ -1,0 +1,127 @@
+{
+  "common": {
+    "name": "ntfy-sh",
+    "version": "0.1.0",
+    "news": {
+      "0.1.0": {
+        "en": "Initial implementation with full ntfy.sh support. Features include: Topics subscription (SSE), account statistics, rich publishing options (Click, Attach, Filename, Email, Call, Actions, etc.), dismiss/delete notifications, and Blockly support.",
+        "de": "Erstveröffentlichung mit vollem ntfy.sh Support. Funktionen: Topics abonnieren (SSE), Kontostatistiken, umfangreiche Publishing-Optionen (Click, Attach, Filename, Email, Call, Actions, etc.), Benachrichtigungen verwerfen/löschen und Blockly-Unterstützung.",
+        "ru": "Первоначальная реализация с полной поддержкой ntfy.sh. Особенности включают: подписку на темы (SSE), статистику аккаунта, богатые возможности публикации (щелчок, вложение, имя файла, адрес электронной почты, вызов, действия и т. д.), отклонение/удаление уведомлений и поддержку Blockly.",
+        "pt": "Implementação inicial com suporte total ao ntfy.sh. Os recursos incluem: assinatura de tópicos (SSE), estatísticas da conta, ricas opções de publicação (clique, anexo, nome de arquivo, e-mail, chamada, ações, etc.), dispensa/exclusão de notificações e suporte Blockly.",
+        "nl": "Eerste implementatie met volledige ntfy.sh ondersteuning. Functies omvatten: abonnement op onderwerpen (SSE), accountstatistieken, uitgebreide publicatie-opties (klikken, bijvoegen, bestandsnaam, e-mail, oproep, acties, enz.), meldingen negeren/verwijderen en Blockly-onderstütuning.",
+        "fr": "Mise en œuvre initiale avec prise en charge complète de ntfy.sh. Les fonctionnalités incluent : l'abonnement aux sujets (SSE), les statistiques du compte, des options de publication riches (clic, pièce jointe, nom de fichier, e-mail, appel, actions, etc.), le rejet/suppression des notifications et la prise en charge de Blockly.",
+        "it": "Implementazione iniziale con supporto completo ntfy.sh. Le caratteristiche includono: iscrizione ai topic (SSE), statistiche account, ricche opzioni di pubblicazione (Click, Attach, Filename, Email, Call, Actions, ecc.), eliminazione/cancellazione delle notifiche e supporto Blockly.",
+        "es": "Implementación inicial con soporte completo para ntfy.sh. Las funciones incluyen: suscripción a temas (SSE), estadísticas de cuenta, ricas opciones de publicación (clic, adjunto, nombre de archivo, correo electrónico, llamada, acciones, etc.), descartar/eliminar notificaciones y soporte para Blockly.",
+        "pl": "Inicjalna implementacja z pełną obsługą ntfy.sh. Funkcje obejmują: subskrypcję tematów (SSE), statystyki konta, bogate opcje publikowania (kliknięcie, załącznik, nazwa pliku, e-mail, połączenie, działania itp.), odrzucanie/usuwanie powiadomień i obsługę Blockly.",
+        "uk": "Початкова реалізація з повною підтримкою ntfy.sh. Особливості включають: підписку на теми (SSE), статистику облікового запису, широкі можливості публікації (натискання, вкладення, ім’я файлу, електронна пошта, дзвінок, дії тощо), відхилення/видалення сповіщень і підтримку Blockly.",
+        "zh-cn": "初始实现并提供完整的 ntfy.sh 支持。功能包括：主题订阅 (SSE)、账户统计、丰富的发布选项（点击、附件、文件名、电子邮件、呼叫、操作等）、驳回/删除通知以及 Blockly 支持。"
+      }
+    },
+    "titleLang": {
+      "en": "ntfy",
+      "de": "ntfy",
+      "ru": "ntfy",
+      "pt": "ntfy",
+      "nl": "ntfy",
+      "fr": "ntfy",
+      "it": "ntfy",
+      "es": "ntfy",
+      "pl": "ntfy",
+      "uk": "ntfy",
+      "zh-cn": "ntfy"
+    },
+    "desc": {
+      "en": "Unofficial ntfy.sh adapter for ioBroker",
+      "de": "Inoffizieller ntfy.sh Adapter für ioBroker",
+      "ru": "Неофициальный адаптер ntfy.sh для ioBroker",
+      "pt": "Adaptador ntfy.sh não oficial para ioBroker",
+      "nl": "Onofficiële ntfy.sh adapter voor ioBroker",
+      "fr": "Adaptateur ntfy.sh non officiel pour ioBroker",
+      "it": "Adattatore ntfy.sh non ufficiale per ioBroker",
+      "es": "Adaptador ntfy.sh no oficial para ioBroker",
+      "pl": "Nieoficjalny adapter ntfy.sh dla ioBroker",
+      "uk": "Неофіційний адаптер ntfy.sh для ioBroker",
+      "zh-cn": "ioBroker 的非官方 ntfy.sh 适配器"
+    },
+    "authors": [
+      "lubepi"
+    ],
+    "keywords": [
+      "ntfy",
+      "notifications",
+      "push"
+    ],
+    "platform": "Javascript/Node.js",
+    "icon": "ntfy-sh.png",
+    "enabled": true,
+    "extIcon": "https://raw.githubusercontent.com/lubepi/ioBroker.ntfy-sh/main/admin/ntfy-sh.png",
+    "readme": "https://github.com/lubepi/ioBroker.ntfy-sh/blob/main/README.md",
+    "loglevel": "info",
+    "mode": "daemon",
+    "type": "messaging",
+    "compact": true,
+    "adminUI": {
+      "config": "json"
+    },
+    "messagebox": true,
+    "blockly": true,
+    "tier": 3,
+    "connectionType": "cloud",
+    "dataSource": "push",
+    "licenseInformation": {
+      "type": "free",
+      "license": "MIT"
+    },
+    "dependencies": [
+      {
+        "js-controller": ">=6.0.11"
+      }
+    ],
+    "globalDependencies": [
+      {
+        "admin": ">=7.6.20"
+      }
+    ]
+  },
+  "protectedNative": [
+    "pass",
+    "token"
+  ],
+  "encryptedNative": [
+    "pass",
+    "token"
+  ],
+  "native": {
+    "url": "https://ntfy.sh",
+    "authType": "none",
+    "user": "",
+    "pass": "",
+    "token": "",
+    "defaultTopic": "",
+    "topics": []
+  },
+  "objects": [],
+  "instanceObjects": [
+    {
+      "_id": "info",
+      "type": "channel",
+      "common": {
+        "name": "Information"
+      },
+      "native": {}
+    },
+    {
+      "_id": "info.connection",
+      "type": "state",
+      "common": {
+        "role": "indicator.connected",
+        "name": "Connection status",
+        "type": "boolean",
+        "read": true,
+        "write": false,
+        "def": false
+      },
+      "native": {}
+    }
+  ]
+}

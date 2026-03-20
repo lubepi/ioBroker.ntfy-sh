@@ -1,0 +1,6 @@
+# Configuration for https://github.com/pascalgn/automerge-action
+# Or just to satisfy repochecker's suggestion for automerge structure
+merged:
+  # Merge all PRs from dependabot
+  - author: "dependabot[bot]"
+    merge_method: "merge"

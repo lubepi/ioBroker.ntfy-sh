@@ -1,0 +1,19 @@
+{
+    "Access Token": "Token dostępu",
+    "Access Token Auth": "Token dostępu",
+    "Authentication Type": "Typ uwierzytelniania",
+    "Configure topics to subscribe to. The adapter will receive messages from these topics in real-time via SSE (Server-Sent Events).": "Skonfiguruj tematy do subskrypcji. Adapter będzie otrzymywał wiadomości z tych tematów w czasie rzeczywistym przez SSE (Server-Sent Events).",
+    "Connection": "Połączenie",
+    "Default Topic": "Domyślny temat",
+    "Default topic for notifications (used when no topic is specified in the message)": "Domyślny temat powiadomień (używany, gdy w wiadomości nie podano tematu)",
+    "Default: https://ntfy.sh": "Domyślnie: https://ntfy.sh",
+    "Display Name": "Nazwa wyświetlana",
+    "None": "Brak",
+    "Password": "Hasło",
+    "Subscribed Topics": "Subskrybowane tematy",
+    "Topic Name": "Nazwa tematu",
+    "Topics": "Tematy",
+    "Username": "Nazwa użytkownika",
+    "Username / Password": "Nazwa użytkownika / Hasło",
+    "ntfy Server URL": "URL serwera ntfy"
+}
