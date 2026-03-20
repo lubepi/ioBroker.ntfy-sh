@@ -48,7 +48,8 @@
   "main": "main.js",
   "scripts": {
     "test:package": "mocha test/package --exit",
-    "test": "npm run test:package",
+    "test:integration": "mocha test/integration --exit",
+    "test": "npm run test:package && npm run test:integration",
     "lint": "eslint .",
     "translate": "translate-adapter",
     "release": "release-script"
