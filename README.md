@@ -275,6 +275,10 @@ Ntfy supports a few variations:
 | `delete`            | Delete a notification by sequence_id                 |
 
 ## Changelog
+
+### **WORK IN PROGRESS**
+- (ioBroker-Bot) Adapter requires admin >= 7.8.23 now.
+
 ### 0.1.4 (2026-06-07)
 
 - (lubepi) **FIXED**: Adapter now creates missing parent folder objects (stats, topics) so they appear correctly in the object tree
