@@ -29,7 +29,7 @@
     "main.js"
   ],
   "dependencies": {
-    "@iobroker/adapter-core": "^3.4.1",
+    "@iobroker/adapter-core": "^3.4.3",
     "axios": "^1.18.1",
     "eventsource": "^4.1.0"
   },
